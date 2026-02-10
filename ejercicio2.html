@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de Output en Javascript</title>
+</head>
+<body>
+    <p id="parrafo"></p>
+    <button onclick="cambiar_contenido()">Cambiar contenido</button>
+    <button onclick="mostrar_nombre()">Mostrar nombre</button>
+
+    <script>
+        console.log("Este mensaje debe imprimirse en la consola del navegador.");
+
+        function cambiar_contenido() {
+            document.getElementById("parrafo").innerHTML = "¡Texto actualizado con Javascript!";
+        }
+
+        function mostrar_nombre() {
+            alert("¡Hola! Mi nombre es Adam.");
+        }
+    </script>
+</body>
+</html>
